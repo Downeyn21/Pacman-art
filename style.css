@@ -1,0 +1,144 @@
+body {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.container {
+    display:flex;
+    border: outset white 20px;
+    height: 600px;
+    width: 600px;
+    padding: 0;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+
+
+.pac-man {
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid yellow;
+    border-left: 60px solid yellow;
+    border-bottom: 60px solid yellow;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin-left: 15px;
+    /* position: absolute; */
+      }
+
+.dot {
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    /* position: absolute; */
+}
+
+.ghost{
+    border-radius: 100% 100% 0 0;
+    /* display: inline-block; */
+    height: 100px;
+    margin: 20px;
+    position: relative;
+    width: 80px;
+    background-color: blue;
+    /* position: absolute; */
+    /* positions */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.line-top {
+    background-color: white;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 35%;
+}
+
+.line-bot {
+    background-color: white;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 35%;
+}
+
+.eye {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+#right-eye {
+    right: 30px;
+    top: 279px;
+}
+
+#left-eye {
+    right: 60px;
+    top: 279px;
+}
+
+.pup {
+    position: absolute;
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+#left-eye-pup {
+    right: 60px;
+    top: 283px;
+}
+
+#right-eye-pup {
+    right: 30px;
+    top: 283px;
+}
+
+.container2 {
+    background-color: white;
+    border: double;
+    margin: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: fit-content;
+}
+
+.info {
+    margin: 15px;
+}
+
+.butt {
+    margin: 15px;
+}
+
+p {
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+}
+
+#redacted {
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
