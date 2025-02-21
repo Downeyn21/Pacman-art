@@ -61,12 +61,21 @@ body {
     margin: 20px;
     position: relative;
     width: 80px;
-    background-color: blue;
+    /* background-color: red; */
+    animation-name: gradient;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
     /* position: absolute; */
     /* positions */
     justify-content: space-between;
     align-items: center;
   }
+
+@keyframes gradient {
+    from {background-color: red;}
+    to{background-color: blue;}
+}
+
 
 .line-top {
     background-color: white;
